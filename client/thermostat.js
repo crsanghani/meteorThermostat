@@ -2,7 +2,7 @@
 
 function Thermostat(){
 
-  this.DEFAULT_TEMPERATURE = 20
+  this.DEFAULT_TEMPERATURE = 20;
 
 }
 
