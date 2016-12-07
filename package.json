@@ -1,0 +1,12 @@
+{
+  "name": "meteorThermostat",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "chimp --ddp=localhost://localhost:3000 --jasmine || exit 0"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "babel-runtime": "6.18.0"
+  }
+}
