@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "test": "chimp --ddp=localhost://localhost:3000 --jasmine || exit 0"
+    "test": "chimp --ddp=http://localhost:3000 --path=tests --jasmine || exit 0"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0",
