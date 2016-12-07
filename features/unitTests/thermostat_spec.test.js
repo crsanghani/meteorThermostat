@@ -1,7 +1,9 @@
+var Thermostat = require('../../client/thermostat');
+var thermostat;
+
 describe("Thermostat", function () {
   'use strict';
-  var Thermostat = require('../../client/thermostat.js');
-  var thermostat;
+
 
   beforeEach(function () {
     thermostat = new Thermostat();
@@ -13,4 +15,10 @@ describe("Thermostat", function () {
     });
   });
 
+  describe("temperature modifications", function () {
+    it("temp can be incremented", function () {
+      thermostat.up();
+      expect(thermostat.current_temperature).to.equal(21);
+    });
+  })
 });
